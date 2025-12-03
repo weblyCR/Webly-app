@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weblycr - Desarrollo Web y Aplicaciones Móviles</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <img src="img/PNG/IMAGOTIPO WEBLY PNG.png" alt="Weblycr Logo" class="logo-imagotipo">
+                <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logo" class="logo-isotipo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="services-dropdown">
+                        <a href="#servicios" class="nav-link has-dropdown">Servicios</a>
+                        <div class="dropdown-menu">
+                            <a href="services/landing.html" class="dropdown-item">
+                                <i class="fas fa-laptop-code"></i> Landing Pages
+                            </a>
+                            <a href="services/webapp.html" class="dropdown-item">
+                                <i class="fas fa-globe"></i> Aplicaciones Web
+                            </a>
+                            <a href="services/mobile.html" class="dropdown-item">
+                                <i class="fas fa-mobile-alt"></i> Apps Móviles
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-logo">
+                    <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                </div>
+                <h1 class="fade-in-up">Transformamos visiones en experiencias digitales</h1>
+                <p class="fade-in-up delay-1">Soluciones web y móviles de alto impacto para impulsar tu negocio en Costa
+                    Rica.</p>
+                <div class="hero-buttons fade-in-up delay-2">
+                    <a href="#servicios" class="btn btn-primary slide-in-right">Ver Servicios</a>
+                    <a href="contact.html" class="btn btn-secondary slide-in-left">Contactar</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <P>IMAGEN</P>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="fade-in-up">Nuestros Servicios</h2>
+                <p class="fade-in-up delay-1">Soluciones digitales a medida para cada necesidad</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card scale-in">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Páginas de alto impacto diseñadas para maximizar conversiones y capturar leads cualificados.</p>
+                    <ul class="service-features">
+                        <li>Diseño responsive y moderno</li>
+                        <li>Optimización SEO avanzada</li>
+                        <li>Integraciones personalizadas</li>
+                        <li>Análisis de conversión</li>
+                    </ul>
+                    <div class="service-button">
+                        <a href="services/landing.html" class="btn btn-outline">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="service-card scale-in delay-1">
+                    <div class="service-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Aplicaciones Web</h3>
+                    <p>Desarrollo de plataformas web escalables con arquitectura moderna y alto rendimiento.</p>
+                    <ul class="service-features">
+                        <li>Arquitectura robusta</li>
+                        <li>Seguridad empresarial</li>
+                        <li>Panel administrativo</li>
+                        <li>API personalizadas</li>
+                    </ul>
+                    <div class="service-button">
+                        <a href="services/webapp.html" class="btn btn-outline">Ver Detalles</a>
+                    </div>
+                </div>
+
+                <div class="service-card scale-in delay-2">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Apps Móviles</h3>
+                    <p>Creación de aplicaciones nativas e híbridas para iOS y Android con experiencias excepcionales.
+                    </p>
+                    <ul class="service-features">
+                        <li>Desarrollo nativo/híbrido</li>
+                        <li>UI/UX intuitivo</li>
+                        <li>Publicación en stores</li>
+                        <li>Actualizaciones continuas</li>
+                    </ul>
+                    <div class="service-button">
+                        <a href="services/mobile.html" class="btn btn-outline">Ver Detalles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="footer-logo-img">
+                        <img src="img/PNG/LOGOTIPO WEBLY PNG.png" alt="Weblycr Logotipo">
+                    </div>
+                    <p>Innovación digital que transforma negocios en Costa Rica desde 2025.</p>
+
+                    <div class="footer-contact-info">
+                        <div class="footer-contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+506 8616-5920</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>soporte@weblycr.com</span>
+                        </div>
+                        <div class="footer-contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>SantaCruz, Costa Rica</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-links">
+                    <h4>Navegación</h4>
+                    <ul>
+                        <li><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="about.html" class="footer-link">Nosotros</a></li>
+                        <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-services">
+                    <h4>Servicios</h4>
+                    <ul>
+                        <li><a href="services/landing.html" class="footer-link">Landing Pages</a></li>
+                        <li><a href="services/webapp.html" class="footer-link">Aplicaciones Web</a></li>
+                        <li><a href="services/mobile.html" class="footer-link">Apps Móviles</a></li>
+                        <li><a href="contact.html" class="footer-link">Consultoría</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-contact">
+                    <h4>Contáctanos</h4>
+                    <ul>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Lun - Vie: 8:00 AM - 5:00 PM</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+50686165920" class="footer-link">+506 8616-5920</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:soporte@weblycr.com" class="footer-link">soporte@weblycr.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Weblycr. Todos los derechos reservados.
+                    <a href="contact.html" class="footer-link">Contáctanos</a> |
+                    <a href="privacy.html" class="footer-link">Política de Privacidad</a> |
+                    <a href="terms.html" class="footer-link">Términos de Servicio</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
