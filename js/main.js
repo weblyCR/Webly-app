@@ -230,6 +230,89 @@ function showNotification(message, type = 'success') {
         }, 300);
     }, 5000);
 }
+document.addEventListener('DOMContentLoaded', function () {
+    const heroSlides = document.querySelector('.hero-slides');
+    if (!heroSlides) return;
+
+    const slides = heroSlides.querySelectorAll('.hero-slide');
+    const prevBtn = heroSlides.querySelector('.hero-prev');
+    const nextBtn = heroSlides.querySelector('.hero-next');
+    const indicators = heroSlides.querySelectorAll('.hero-indicator');
+    let currentSlide = 0;
+    let slideInterval;
+
+    // Función para cambiar slide
+    function goToSlide(n) {
+        slides[currentSlide].classList.remove('active');
+        indicators[currentSlide].classList.remove('active');
+
+        currentSlide = (n + slides.length) % slides.length;
+
+        slides[currentSlide].classList.add('active');
+        indicators[currentSlide].classList.add('active');
+    }
+
+    // Función para siguiente slide
+    function nextSlide() {
+        goToSlide(currentSlide + 1);
+    }
+
+    // Función para slide anterior
+    function prevSlide() {
+        goToSlide(currentSlide - 1);
+    }
+
+    // Iniciar autoplay
+    function startAutoPlay() {
+        slideInterval = setInterval(nextSlide, 5000); // Cambia cada 5 segundos
+    }
+
+    // Detener autoplay
+    function stopAutoPlay() {
+        clearInterval(slideInterval);
+    }
+
+    // Event listeners para controles
+    if (nextBtn) {
+        nextBtn.addEventListener('click', () => {
+            nextSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+
+    if (prevBtn) {
+        prevBtn.addEventListener('click', () => {
+            prevSlide();
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    }
+
+    // Event listeners para indicadores
+    indicators.forEach((indicator, index) => {
+        indicator.addEventListener('click', () => {
+            goToSlide(index);
+            stopAutoPlay();
+            startAutoPlay();
+        });
+    });
+
+    // Pausar autoplay al pasar el mouse sobre el slider
+    heroSlides.addEventListener('mouseenter', stopAutoPlay);
+    heroSlides.addEventListener('mouseleave', startAutoPlay);
+
+    // Iniciar autoplay
+    startAutoPlay();
+
+    // Asegurar que el primer slide sea visible
+    if (slides.length > 0) {
+        slides[0].classList.add('active');
+        if (indicators.length > 0) {
+            indicators[0].classList.add('active');
+        }
+    }
+});
 
 // Estilos para notificaciones
 const style = document.createElement('style');

@@ -247,9 +247,9 @@ section {
 
 .btn-secondary {
     background-color: transparent;
-    color: var(--color-500);
-    border-color: var(--color-500);
-    background-color: rgba(0, 173, 219, 0.05);
+    color: var(--white);
+    border-color: var(--white);
+    background-color: rgba(255, 255, 255, 0.05);
 }
 
 .btn-secondary:hover {
@@ -292,7 +292,7 @@ header {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background-color: var(--color-500);
+    background-color: linear-gradient(135deg, var(--white), var(--color-50));
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow-md);
     transition: all var(--transition-fast);
@@ -300,17 +300,17 @@ header {
 }
 
 header.scrolled {
-    background-color: var(--color-50);
+    /*background-color: var(--color-500);*/
     box-shadow: var(--shadow-lg);
 }
 
 header.scrolled .nav-link {
-    color: var(--white);
+    color: var(--color-600);
 }
 
 header.scrolled .nav-link:hover,
 header.scrolled .nav-link.active {
-    color: var(--color-700);
+    color: var(--color-800);
 }
 
 header.scrolled .hamburger .bar {
@@ -347,7 +347,7 @@ header.scrolled .hamburger .bar {
 }
 
 .logo-isotipo {
-    height: 40px;
+    height: 60px;
     width: auto;
     object-fit: contain;
     display: none;
@@ -491,9 +491,11 @@ header.scrolled .hamburger .bar {
 /* ===== HERO ===== */
 .hero {
     padding: 180px 0 100px;
-    background: linear-gradient(135deg, var(--color-50) 0%, var(--white) 100%);
+    background: linear-gradient(135deg, var(--white), var(--color-600));
     position: relative;
     overflow: hidden;
+    height:100vh;
+    min-height:700px;
 }
 
 .hero .container {
@@ -520,7 +522,7 @@ header.scrolled .hamburger .bar {
 
 .hero h1 {
     margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--color-700), var(--color-500));
+    background: linear-gradient(135deg, var(--color-800), var(--color-500));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -563,7 +565,7 @@ header.scrolled .hamburger .bar {
 
 /* Hero de servicio */
 .service-hero {
-    background: linear-gradient(135deg, var(--color-50) 0%, var(--white) 100%);
+    background: linear-gradient(135deg, var(--color-600) 0%, var(--white) 100%);
     padding: 150px 0 80px;
     margin-top: 80px;
     text-align: center;
@@ -1776,73 +1778,6 @@ header.scrolled .hamburger .bar {
     color: var(--color-200);
     transition: transform var(--transition-fast);
 }
-/* ===== HERO ===== */
-.hero {
-    padding: 180px 0 100px;
-    background: linear-gradient(135deg, var(--color-50) 0%, var(--white) 100%);
-    position: relative;
-    overflow: hidden;
-}
-
-.hero .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4rem;
-}
-
-.hero-content {
-    flex: 1;
-    max-width: 600px;
-}
-
-.hero-logo {
-    margin-bottom: 2rem;
-}
-
-.hero-logo img {
-    height: 70px;
-    width: auto;
-    object-fit: contain;
-}
-
-.hero h1 {
-    margin-bottom: 1.5rem;
-    background: linear-gradient(135deg, var(--color-700), var(--color-500));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-}
-
-.hero-buttons {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
-}
-
-.hero-image {
-    flex: 1;
-    border-radius: 16px;
-    overflow: hidden;
-    box-shadow: var(--shadow-xl);
-    transform: perspective(1000px) rotateY(-5deg);
-    transition: transform var(--transition-medium);
-}
-
-.hero-image:hover {
-    transform: perspective(1000px) rotateY(0deg);
-}
-
-.hero-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform var(--transition-medium);
-}
-
-.hero-image:hover img {
-    transform: scale(1.05);
-}
 
 /* ===== SERVICIOS ===== */
 .services {
@@ -2924,3 +2859,229 @@ img {
 .filter-svg {
     display: none;
 }
+/*Banner "SLIDE"*/
+.hero-slides {
+            position: relative;
+            height: 100%;
+        }
+        
+        .hero-slide {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.5s ease, visibility 0.5s;
+        }
+        
+        .hero-slide.active {
+            opacity: 1;
+            visibility: visible;
+        }
+        
+        .hero-slide .container {
+            height: 100%;
+        }
+        
+        /* Controles del slider */
+        .hero-prev,
+        .hero-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--color-200);
+            border: none;
+            color: var(--white);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            backdrop-filter: blur(5px);
+        }
+        
+        .hero-prev:hover,
+        .hero-next:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-50%) scale(1.1);
+        }
+        
+        .hero-prev {
+            left: 20px;
+        }
+        
+        .hero-next {
+            right: 20px;
+        }
+        
+        /* Indicadores */
+        .hero-indicators {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            z-index: 10;
+        }
+        
+        .hero-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: var(--color-50);
+            border: none;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            padding: 0;
+        }
+        
+        .hero-indicator.active {
+            background-color: var(--white);
+            transform: scale(1.2);
+        }
+        
+        /* Elementos promocionales específicos */
+        .hero-badge {
+            display: inline-block;
+            background-color: var(--white);
+            color: var(--color-600);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: var(--shadow-sm);
+        }
+        
+        .hero-timer {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            color: var(--white);
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+        
+        .hero-timer i {
+            color: var(--color-200);
+        }
+        
+        .hero-features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        
+        .hero-features span {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .hero-features i {
+            color: var(--color-200);
+            font-size: 0.8rem;
+        }
+        
+        .promo-highlight {
+            margin: 1.5rem 0;
+            text-align: center;
+        }
+        
+        .highlight-item {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 1rem 2rem;
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 1rem;
+        }
+        
+        .highlight-number {
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1;
+        }
+        
+        .highlight-label {
+            font-size: 1.2rem;
+            color: var(--white);
+            opacity: 0.9;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .highlight-text {
+            color: var(--white);
+            opacity: 0.9;
+            font-size: 1rem;
+        }
+        
+        .promo-icon-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .promo-icon {
+            font-size: 8rem;
+            color: rgba(255, 255, 255, 0.15);
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .promo-number {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            font-weight: 800;
+            color: var(--white);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero-prev,
+            .hero-next {
+                width: 40px;
+                height: 40px;
+            }
+            
+            .promo-icon {
+                font-size: 5rem;
+            }
+            
+            .promo-number {
+                font-size: 2rem;
+            }
+            
+            .highlight-number {
+                font-size: 2.5rem;
+            }
+            
+            .highlight-label {
+                font-size: 1rem;
+            }
+        }

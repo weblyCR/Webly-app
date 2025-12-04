@@ -16,7 +16,7 @@
     <header>
         <div class="container header-container">
             <a href="index.html" class="logo-container">
-                <img src="img/PNG/IMAGOTIPO WEBLY PNG.png" alt="Weblycr Logo" class="logo-imagotipo">
+                <img src="img/PNG/IMAGOTIPO AZUL V2.png" alt="Weblycr Logo" class="logo-imagotipo">
                 <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logo" class="logo-isotipo">
             </a>
             <nav>
@@ -48,23 +48,104 @@
         </div>
     </header>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-logo">
-                    <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
-                </div>
-                <h1 class="fade-in-up">Transformamos visiones en experiencias digitales</h1>
-                <p class="fade-in-up delay-1">Soluciones web y móviles de alto impacto para impulsar tu negocio en Costa
-                    Rica.</p>
-                <div class="hero-buttons fade-in-up delay-2">
-                    <a href="#servicios" class="btn btn-primary slide-in-right">Ver Servicios</a>
-                    <a href="contact.html" class="btn btn-secondary slide-in-left">Contactar</a>
+    <!-- Hero Section con Slider -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="hero-slides">
+            <!-- Slide 1 - Promoción Principal -->
+            <div class="hero-slide active">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                        </div>
+                        <span class="hero-badge">¡Oferta Limitada!</span>
+                        <h1 class="fade-in-up">20% DE DESCUENTO</h1>
+                        <p class="fade-in-up delay-1">En tu primer proyecto de desarrollo web o aplicación móvil.
+                            Transformamos visiones en experiencias digitales en Costa Rica.</p>
+                        <div class="hero-buttons fade-in-up delay-2">
+                            <a href="#servicios" class="btn btn-primary slide-in-right">Ver Servicios</a>
+                            <a href="contact.html" class="btn btn-secondary slide-in-left">Contactar</a>
+                        </div>
+                        <div class="hero-timer fade-in-up delay-3">
+                            <i class="fas fa-clock"></i>
+                            <span>Promoción válida para nuestros primeros 10 clientes</span>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="promo-icon-container">
+                            <!--IMAGEN-->
+                            <span class="promo-number">20%</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <P>IMAGEN</P>
+
+            <!-- Slide 2 - Landing Pages -->
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                        </div>
+                        <span class="hero-badge">Promoción Especial</span>
+                        <h1 class="fade-in-up">Landing Page + SEO</h1>
+                        <p class="fade-in-up delay-1">Obtén una landing page profesional con optimización SEO incluida
+                            con 20% de descuento.</p>
+                        <div class="hero-features fade-in-up delay-2">
+                            <span><i class="fas fa-check"></i> Diseño responsive</span>
+                            <span><i class="fas fa-check"></i> Optimización SEO</span>
+                            <span><i class="fas fa-check"></i> Formulario de contacto</span>
+                        </div>
+                        <div class="hero-buttons fade-in-up delay-3">
+                            <a href="services/landing.html" class="btn btn-primary slide-in-right">Ver Detalles</a>
+                            <a href="contact.html" class="btn btn-secondary slide-in-left">Solicitar Oferta</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="promo-icon-container">
+                            <!--IMAGEN-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Apps Móviles -->
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                        </div>
+                        <span class="hero-badge">¡Aprovecha!</span>
+                        <h1 class="fade-in-up">App Móvil -20%</h1>
+                        <p class="fade-in-up delay-1">Desarrollo de aplicación móvil nativa o híbrida para iOS y Android
+                            con descuento especial.</p>
+                        <div class="hero-buttons fade-in-up delay-3">
+                            <a href="services/mobile.html" class="btn btn-primary slide-in-right">Ver Apps</a>
+                            <a href="contact.html" class="btn btn-secondary slide-in-left">Cotizar Ahora</a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="promo-icon-container">
+                            <!--IMAGEN-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del slider -->
+            <button class="hero-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Indicadores -->
+            <div class="hero-indicators">
+                <button class="hero-indicator active" data-slide="0"></button>
+                <button class="hero-indicator" data-slide="1"></button>
+                <button class="hero-indicator" data-slide="2"></button>
             </div>
         </div>
     </section>
