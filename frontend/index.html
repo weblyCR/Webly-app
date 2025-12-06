@@ -212,81 +212,110 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer>
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <div class="footer-logo-img">
-                        <img src="img/PNG/LOGOTIPO WEBLY PNG.png" alt="Weblycr Logotipo">
-                    </div>
-                    <p>Innovación digital que transforma negocios en Costa Rica desde 2025.</p>
-
-                    <div class="footer-contact-info">
-                        <div class="footer-contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+506 8616-5920</span>
-                        </div>
-                        <div class="footer-contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>soporte@weblycr.com</span>
-                        </div>
-                        <div class="footer-contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>SantaCruz, Costa Rica</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="footer-links">
+                <!-- Columna 1: Navegación -->
+                <div class="footer-column">
                     <h4>Navegación</h4>
-                    <ul>
+                    <ul class="footer-links">
                         <li><a href="index.html" class="footer-link">Inicio</a></li>
                         <li><a href="about.html" class="footer-link">Nosotros</a></li>
+                        <li><a href="services.html" class="footer-link">Servicios</a></li>
                         <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacidad</a></li>
+                        <li><a href="terms.html" class="footer-link">Términos</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-services">
+                <!-- Columna 2: Servicios -->
+                <div class="footer-column">
                     <h4>Servicios</h4>
-                    <ul>
+                    <ul class="footer-services">
                         <li><a href="services/landing.html" class="footer-link">Landing Pages</a></li>
                         <li><a href="services/webapp.html" class="footer-link">Aplicaciones Web</a></li>
                         <li><a href="services/mobile.html" class="footer-link">Apps Móviles</a></li>
                         <li><a href="contact.html" class="footer-link">Consultoría</a></li>
+                        <li><a href="contact.html" class="footer-link">Presupuesto</a></li>
+                        <li><a href="contact.html" class="footer-link">Soporte</a></li>
                     </ul>
                 </div>
 
-                <div class="footer-contact">
-                    <h4>Contáctanos</h4>
-                    <ul>
-                        <li>
-                            <i class="fas fa-clock"></i>
-                            <span>Lun - Vie: 8:00 AM - 5:00 PM</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-phone"></i>
-                            <a href="tel:+50686165920" class="footer-link">+506 8616-5920</a>
-                        </li>
-                        <li>
-                            <i class="fas fa-envelope"></i>
-                            <a href="mailto:soporte@weblycr.com" class="footer-link">soporte@weblycr.com</a>
-                        </li>
-                    </ul>
+                <!-- Columna 3: Contacto rápido -->
+                <div class="footer-column">
+                    <h4>Contacto Rápido</h4>
+                    <div class="quick-contact">
+                        <a href="tel:+50686165920" class="contact-btn">
+                            <i class="fas fa-phone"></i> Llamar Ahora
+                        </a>
+                        <a href="https://wa.me/50686165920" target="_blank" class="contact-btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:soporte@weblycr.com" class="contact-btn email-btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+
+                    <!-- Info de contacto mínima -->
+                    <div class="mini-contact-info">
+                        <p><i class="fas fa-phone"></i> +506 8616-5920</p>
+                        <p><i class="fas fa-envelope"></i> soporte@weblycr.com</p>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Logo y Redes Sociales -->
+                <div class="footer-column">
+                    <div class="footer-logo-social">
+                        <!-- Logo -->
+                        <div class="footer-logo-img">
+                            <img src="img/PNG/IMAGOTIPO AZUL V2.png" alt="Weblycr">
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="social-section">
+                            <div class="social-icons">
+                                <a href="https://facebook.com/weblycr" target="_blank" class="social-icon"
+                                    aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://instagram.com/weblycr" target="_blank" class="social-icon"
+                                    aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/weblycr" target="_blank" class="social-icon"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Weblycr. Todos los derechos reservados.
-                    <a href="contact.html" class="footer-link">Contáctanos</a> |
-                    <a href="privacy.html" class="footer-link">Política de Privacidad</a> |
-                    <a href="terms.html" class="footer-link">Términos de Servicio</a>
-                </p>
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Weblycr. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-payment">
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fas fa-university" title="Transferencia"></i>
+                        </div>
+                    </div>
+                    <div class="footer-legal-links">
+                        <a href="contact.html" class="footer-link">Contacto</a>
+                        <span class="separator">|</span>
+                        <a href="privacy.html" class="footer-link">Privacidad</a>
+                        <span class="separator">|</span>
+                        <a href="terms.html" class="footer-link">Términos</a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>
-
     <script src="js/main.js"></script>
 </body>
 
