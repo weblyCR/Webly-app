@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nosotros - Weblycr</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <img src="img/PNG/IMAGOTIPO AZUL V2.png" alt="Weblycr Logo" class="logo-imagotipo">
+                <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logo" class="logo-isotipo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="services-dropdown">
+                        <a href="#servicios" class="nav-link has-dropdown">Servicios</a>
+                        <div class="dropdown-menu">
+                            <a href="services/landing.html" class="dropdown-item">
+                                <i class="fas fa-laptop-code"></i> Landing Pages
+                            </a>
+                            <a href="services/webapp.html" class="dropdown-item">
+                                <i class="fas fa-globe"></i> Aplicaciones Web
+                            </a>
+                            <a href="services/mobile.html" class="dropdown-item">
+                                <i class="fas fa-mobile-alt"></i> Apps Móviles
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav-link active">Nosotros</a></li>
+                    <li><a href="contact.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section con Slider (modificado para Nosotros) -->
+    <section class="hero" style="position: relative; overflow: hidden;">
+        <div class="hero-slides">
+            <!-- Slide 1 - Nuestra Historia -->
+            <div class="hero-slide active">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                        </div>
+                        <span class="hero-badge">Conócenos</span>
+                        <h1 class="fade-in-up">Nuestra Historia</h1>
+                        <p class="fade-in-up delay-1">Fundada en 2025, Weblycr nació con la misión de democratizar el
+                            acceso al desarrollo web de calidad para empresas costarricenses.</p>
+                        <div class="hero-buttons fade-in-up delay-2">
+                            <a href="#nuestra-mision" class="btn btn-primary slide-in-right">Nuestra Misión</a>
+                            <a href="#equipo" class="btn btn-secondary slide-in-left">Conoce al Equipo</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            <!-- Slide 2 - Nuestra Misión y Valores -->
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                        </div>
+                        <span class="hero-badge">Nuestro Propósito</span>
+                        <h1 class="fade-in-up">Misión y Valores</h1>
+                        <p class="fade-in-up delay-1">Proporcionar soluciones digitales personalizadas que impulsen el
+                            crecimiento empresarial, combinando tecnología de vanguardia con un enfoque centrado en el
+                            cliente.</p>
+                        <div class="hero-features fade-in-up delay-2">
+                            <span><i class="fas fa-lightbulb"></i> Innovación</span>
+                            <span><i class="fas fa-star"></i> Calidad</span>
+                            <span><i class="fas fa-shield-alt"></i> Transparencia</span>
+                        </div>
+                        <div class="hero-buttons fade-in-up delay-3">
+                            <a href="#valores" class="btn btn-primary slide-in-right">Ver Valores</a>
+                            <a href="contact.html" class="btn btn-secondary slide-in-left">Trabaja con Nosotros</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3 - Nuestro Equipo -->
+            <div class="hero-slide">
+                <div class="container">
+                    <div class="hero-content">
+                        <div class="hero-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logotipo" class="logo-animate">
+                        </div>
+                        <span class="hero-badge">El Equipo</span>
+                        <h1 class="fade-in-up">Expertos en Innovación</h1>
+                        <p class="fade-in-up delay-1">Un equipo multidisciplinario de 4 profesionales apasionados por la
+                            tecnología y comprometidos con la excelencia en cada proyecto.</p>
+                        <div class="hero-features fade-in-up delay-2">
+                            <span><i class="fas fa-code"></i> Desarrollo Web</span>
+                            <span><i class="fas fa-mobile-alt"></i> Apps Móviles</span>
+                            <span><i class="fas fa-paint-brush"></i> UI/UX Design</span>
+                        </div>
+                        <div class="hero-buttons fade-in-up delay-3">
+                            <a href="#proyectos" class="btn btn-primary slide-in-right">Ver Proyectos</a>
+                            <a href="contact.html" class="btn btn-secondary slide-in-left">Contactar Equipo</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controles del slider -->
+            <button class="hero-prev">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="hero-next">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+
+            <!-- Indicadores -->
+            <div class="hero-indicators">
+                <button class="hero-indicator active" data-slide="0"></button>
+                <button class="hero-indicator" data-slide="1"></button>
+                <button class="hero-indicator" data-slide="2"></button>
+            </div>
+        </div>
+    </section>
+
+    <main class="about-page">
+        <!-- Sección Nuestra Historia (más detallada) -->
+        <section id="nuestra-historia" class="about-details">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="fade-in-up">Nuestra Historia</h2>
+                    <p class="fade-in-up delay-1">Innovación digital que transforma negocios en Costa Rica</p>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text">
+                        <div class="about-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY RECORTADA.png" alt="Weblycr Logo">
+                        </div>
+
+                        <p class="fade-in-up delay-1">Fundada en 2025, Weblycr nació con la misión de democratizar el
+                            acceso al desarrollo web de calidad para empresas costarricenses. Iniciamos como un pequeño
+                            equipo de desarrolladores apasionados y hoy somos referentes en innovación digital.</p>
+
+                        <p class="fade-in-up delay-2">Comenzamos con un sueño: hacer que la tecnología de vanguardia sea
+                            accesible para todas las empresas, independientemente de su tamaño. Hoy, ese sueño se ha
+                            convertido en una realidad que sigue creciendo día a día.</p>
+                    </div>
+
+                    <div class="about-image">
+                        <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80"
+                            alt="Equipo Weblycr">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Misión y Valores -->
+        <section id="nuestra-mision" class="mission-values-section"
+            style="background: linear-gradient(135deg, var(--color-50) 0%, rgba(153, 222, 241, 0.1) 100%); padding: 100px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="fade-in-up">Misión y Valores</h2>
+                    <p class="fade-in-up delay-1">Los pilares que guían nuestro trabajo</p>
+                </div>
+
+                <div class="mission-values-content">
+                    <div class="mission-card scale-in">
+                        <div class="mission-icon">
+                            <i class="fas fa-bullseye"></i>
+                        </div>
+                        <h3>Nuestra Misión</h3>
+                        <p>Proporcionar soluciones digitales personalizadas que impulsen el crecimiento empresarial,
+                            combinando tecnología de vanguardia con un enfoque centrado en el cliente.</p>
+                    </div>
+
+                    <div class="mission-card scale-in delay-1">
+                        <div class="mission-icon">
+                            <i class="fas fa-eye"></i>
+                        </div>
+                        <h3>Nuestra Visión</h3>
+                        <p>Ser la agencia de desarrollo web líder en Costa Rica, reconocida por nuestra innovación,
+                            calidad y compromiso con el éxito de nuestros clientes.</p>
+                    </div>
+                </div>
+
+                <!-- Valores como tarjetas -->
+                <div class="values-grid" style="margin-top: 4rem;">
+                    <div class="value-card scale-in">
+                        <div class="value-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4>Innovación</h4>
+                        <p>Siempre a la vanguardia tecnológica, buscando soluciones creativas y eficientes.</p>
+                    </div>
+
+                    <div class="value-card scale-in delay-1">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Calidad</h4>
+                        <p>Exigencia en cada detalle, entregando productos que superan las expectativas.</p>
+                    </div>
+
+                    <div class="value-card scale-in delay-2">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Transparencia</h4>
+                        <p>Comunicación clara y honesta en cada etapa del proyecto.</p>
+                    </div>
+
+                    <div class="value-card scale-in delay-3">
+                        <div class="value-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Compromiso</h4>
+                        <p>Resultados que superan expectativas, con dedicación total a cada cliente.</p>
+                    </div>
+
+                    <div class="value-card scale-in delay-4">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Colaboración</h4>
+                        <p>Trabajo en equipo con nuestros clientes para alcanzar objetivos comunes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Nuestro Equipo -->
+        <section id="equipo" class="team-section" style="padding: 100px 0;">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="fade-in-up">Nuestro Equipo</h2>
+                    <p class="fade-in-up delay-1">Profesionales apasionados por la tecnología</p>
+                </div>
+
+                <div class="team-grid"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; margin-top: 3rem;">
+                    <div class="team-member scale-in">
+                        <div class="team-member-img"
+                            style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--color-500), var(--color-600)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-code" style="font-size: 4rem; color: var(--white);"></i>
+                        </div>
+                        <h3>Desarrollador Full-Stack</h3>
+                        <p>Especialista en tecnologías modernas y arquitectura de software.</p>
+                    </div>
+
+                    <div class="team-member scale-in delay-1">
+                        <div class="team-member-img"
+                            style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--color-600), var(--color-700)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-mobile-alt" style="font-size: 4rem; color: var(--white);"></i>
+                        </div>
+                        <h3>Desarrollador Móvil</h3>
+                        <p>Experto en aplicaciones nativas e híbridas para iOS y Android.</p>
+                    </div>
+
+                    <div class="team-member scale-in delay-2">
+                        <div class="team-member-img"
+                            style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--color-700), var(--color-800)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-paint-brush" style="font-size: 4rem; color: var(--white);"></i>
+                        </div>
+                        <h3>Diseñador UI/UX</h3>
+                        <p>Crea experiencias de usuario intuitivas y visualmente atractivas.</p>
+                    </div>
+
+                    <div class="team-member scale-in delay-3">
+                        <div class="team-member-img"
+                            style="width: 150px; height: 150px; border-radius: 50%; background: linear-gradient(135deg, var(--color-800), var(--color-900)); margin: 0 auto 1.5rem; display: flex; align-items: center; justify-content: center;">
+                            <i class="fas fa-chart-line" style="font-size: 4rem; color: var(--white);"></i>
+                        </div>
+                        <h3>Project Manager</h3>
+                        <p>Coordina proyectos y asegura la entrega exitosa de cada solución.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Columna 1: Navegación -->
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="about.html" class="footer-link active">Nosotros</a></li>
+                        <li><a href="services.html" class="footer-link">Servicios</a></li>
+                        <li><a href="contact.html" class="footer-link">Contacto</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacidad</a></li>
+                        <li><a href="terms.html" class="footer-link">Términos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2: Servicios -->
+                <div class="footer-column">
+                    <h4>Servicios</h4>
+                    <ul class="footer-services">
+                        <li><a href="services/landing.html" class="footer-link">Landing Pages</a></li>
+                        <li><a href="services/webapp.html" class="footer-link">Aplicaciones Web</a></li>
+                        <li><a href="services/mobile.html" class="footer-link">Apps Móviles</a></li>
+                        <li><a href="contact.html" class="footer-link">Consultoría</a></li>
+                        <li><a href="contact.html" class="footer-link">Presupuesto</a></li>
+                        <li><a href="contact.html" class="footer-link">Soporte</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto rápido -->
+                <div class="footer-column">
+                    <h4>Contacto Rápido</h4>
+                    <div class="quick-contact">
+                        <a href="tel:+50686165920" class="contact-btn">
+                            <i class="fas fa-phone"></i> Llamar Ahora
+                        </a>
+                        <a href="https://wa.me/50686165920" target="_blank" class="contact-btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:soporte@weblycr.com" class="contact-btn email-btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+
+                    <!-- Info de contacto mínima -->
+                    <div class="mini-contact-info">
+                        <p><i class="fas fa-phone"></i> +506 8616-5920</p>
+                        <p><i class="fas fa-envelope"></i> soporte@weblycr.com</p>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Logo y Redes Sociales -->
+                <div class="footer-column">
+                    <div class="footer-logo-social">
+                        <!-- Logo -->
+                        <div class="footer-logo-img">
+                            <img src="img/PNG/IMAGOTIPO AZUL V2.png" alt="Weblycr">
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="social-section">
+                            <div class="social-icons">
+                                <a href="https://facebook.com/weblycr" target="_blank" class="social-icon"
+                                    aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://instagram.com/weblycr" target="_blank" class="social-icon"
+                                    aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/weblycr" target="_blank" class="social-icon"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Weblycr. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-payment">
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fas fa-university" title="Transferencia"></i>
+                        </div>
+                    </div>
+                    <div class="footer-legal-links">
+                        <a href="contact.html" class="footer-link">Contacto</a>
+                        <span class="separator">|</span>
+                        <a href="privacy.html" class="footer-link">Privacidad</a>
+                        <span class="separator">|</span>
+                        <a href="terms.html" class="footer-link">Términos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
