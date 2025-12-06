@@ -120,37 +120,53 @@ function initScrollEffects() {
 
 // ===== FORMULARIO DE CONTACTO =====
 function initContactForm() {
-    const contactForm = document.getElementById('contactForm');
+    const contactForm = document.getElementById("contactForm");
     if (!contactForm) return;
 
-    contactForm.addEventListener('submit', function (e) {
+    contactForm.addEventListener("submit", async function (e) {
         e.preventDefault();
 
-        const submitBtn = this.querySelector('button[type="submit"]');
+        const submitBtn = this.querySelector("button[type='submit']");
         const originalText = submitBtn.textContent;
-
-        // Simular envío
-        submitBtn.textContent = 'Enviando...';
+        submitBtn.textContent = "Enviando...";
         submitBtn.disabled = true;
 
-        setTimeout(() => {
-            // Mostrar mensaje de éxito
-            submitBtn.textContent = '¡Mensaje Enviado!';
-            submitBtn.classList.add('success');
+        const payload = {
+            name: document.getElementById("name").value.trim(),
+            email: document.getElementById("email").value.trim(),
+            phone: document.getElementById("phone").value.trim(),
+            service: document.getElementById("service").value,
+            message: document.getElementById("message").value.trim(),
+        };
 
-            // Resetear después de 3 segundos
+        try {
+            const response = await fetch("http://localhost:3000/api/contact", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify(payload),
+            });
+
+            if (response.ok) {
+                submitBtn.textContent = "¡Mensaje Enviado!";
+                submitBtn.classList.add("success");
+                contactForm.reset();
+                showNotification("¡Gracias por tu mensaje! Te contactaremos pronto.", "success");
+            } else {
+                showNotification("Error al enviar el mensaje. Inténtalo más tarde.", "error");
+            }
+        } catch (error) {
+            console.error("Error al enviar el formulario:", error);
+            showNotification("No se pudo conectar con el servidor. Revisa si está encendido.", "error");
+        } finally {
             setTimeout(() => {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
-                submitBtn.classList.remove('success');
-                contactForm.reset();
-
-                // Mostrar mensaje de agradecimiento
-                showNotification('¡Gracias por tu mensaje! Te contactaremos pronto.');
+                submitBtn.classList.remove("success");
             }, 3000);
-        }, 1500);
+        }
     });
 }
+
 
 // ===== ANIMACIONES =====
 function initAnimations() {
