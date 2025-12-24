@@ -1,5 +1,9 @@
+
 <?php
-header("Content-Type: application/json");
+header("Content-Type: application/json; charset=UTF-8");
+header("Access-Control-Allow-Origin: https://weblycr.com");
+header("Access-Control-Allow-Methods: POST");
+header("Access-Control-Allow-Headers: Content-Type");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
