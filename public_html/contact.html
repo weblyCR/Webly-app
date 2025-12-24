@@ -600,27 +600,7 @@
                 });
             });
 
-            // Manejo del formulario
-            const contactForm = document.getElementById('contactForm');
-            const formStatus = document.getElementById('formStatus');
-
-            if (contactForm) {
-                contactForm.addEventListener('submit', function (e) {
-                    e.preventDefault();
-
-                    // Simulación de envío exitoso
-                    const success = formStatus.querySelector('.status-success');
-                    const error = formStatus.querySelector('.status-error');
-
-                    // En un caso real, aquí harías la llamada AJAX
-                    setTimeout(() => {
-                        success.style.display = 'block';
-                        error.style.display = 'none';
-                        contactForm.reset();
-                        resetFormProgress();
-                    }, 1500);
-                });
-            }
+           
 
             function resetFormProgress() {
                 const steps = document.querySelectorAll('.form-step');
@@ -635,6 +615,7 @@
             }
         });
     </script>
+
 
 </body>
 

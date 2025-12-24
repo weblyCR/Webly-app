@@ -140,7 +140,7 @@ function initContactForm() {
         };
 
         try {
-            const response = await fetch("../api/contact.php", {
+            const response = await fetch("/api/contact.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
