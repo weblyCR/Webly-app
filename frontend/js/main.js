@@ -140,23 +140,34 @@ function initContactForm() {
         };
 
         try {
-            const response = await fetch("http://localhost:3000/api/contact", {
+            const response = await fetch("../api/contact.php", {
                 method: "POST",
-                headers: { "Content-Type": "application/json" },
+                headers: {
+                    "Content-Type": "application/json"
+                },
                 body: JSON.stringify(payload),
             });
 
-            if (response.ok) {
+            const result = await response.json();
+
+            if (response.ok && result.success) {
                 submitBtn.textContent = "¡Mensaje Enviado!";
                 submitBtn.classList.add("success");
                 contactForm.reset();
-                showNotification("¡Gracias por tu mensaje! Te contactaremos pronto.", "success");
+                showNotification(
+                    result.message || "¡Gracias por tu mensaje! Te contactaremos pronto.",
+                    "success"
+                );
             } else {
-                showNotification("Error al enviar el mensaje. Inténtalo más tarde.", "error");
+                showNotification(
+                    result.message || "Error al enviar el mensaje.",
+                    "error"
+                );
             }
+
         } catch (error) {
             console.error("Error al enviar el formulario:", error);
-            showNotification("No se pudo conectar con el servidor. Revisa si está encendido.", "error");
+            showNotification("No se pudo conectar con el servidor.", "error");
         } finally {
             setTimeout(() => {
                 submitBtn.textContent = originalText;
@@ -166,6 +177,7 @@ function initContactForm() {
         }
     });
 }
+
 
 
 // ===== ANIMACIONES =====
