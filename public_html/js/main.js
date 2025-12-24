@@ -140,7 +140,7 @@ function initContactForm() {
         };
 
         try {
-            const response = await fetch("https://weblycr.com/api/send-message.php", {
+            const response = await fetch("https://weblycr.com/api/submit.php", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -177,6 +177,7 @@ function initContactForm() {
         }
     });
 }
+
 
 
 

@@ -1,9 +1,5 @@
-
 <?php
 header("Content-Type: application/json; charset=UTF-8");
-header("Access-Control-Allow-Origin: https://weblycr.com");
-header("Access-Control-Allow-Methods: POST");
-header("Access-Control-Allow-Headers: Content-Type");
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
@@ -30,7 +26,7 @@ $phone   = trim($data["phone"] ?? "No especificado");
 $service = trim($data["service"] ?? "No especificado");
 $message = trim($data["message"] ?? "");
 
-// Validación obligatoria REAL
+// Validación
 if ($name === "" || $email === "" || $message === "") {
     echo json_encode([
         "success" => false,
@@ -47,7 +43,7 @@ try {
     $mail->Host       = "smtp.hostinger.com";
     $mail->SMTPAuth   = true;
     $mail->Username   = "soporte@weblycr.com";
-    $mail->Password   = "TU_PASSWORD_REAL";
+    $mail->Password   = "TU_PASSWORD";
     $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
     $mail->Port       = 465;
 
