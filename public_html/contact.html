@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Weblycr</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo-container">
+                <img src="img/PNG/IMAGOTIPO AZUL V2.png" alt="Weblycr Logo" class="logo-imagotipo">
+                <img src="img/PNG/ISOTIPO WEBLY.png" alt="Weblycr Logo" class="logo-isotipo">
+            </a>
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li class="services-dropdown">
+                        <a href="#servicios" class="nav-link has-dropdown">Servicios</a>
+                        <div class="dropdown-menu">
+                            <a href="services/landing.html" class="dropdown-item">
+                                <i class="fas fa-laptop-code"></i> Landing Pages
+                            </a>
+                            <a href="services/webapp.html" class="dropdown-item">
+                                <i class="fas fa-globe"></i> Aplicaciones Web
+                            </a>
+                            <a href="services/mobile.html" class="dropdown-item">
+                                <i class="fas fa-mobile-alt"></i> Apps Móviles
+                            </a>
+                        </div>
+                    </li>
+                    <li><a href="about.html" class="nav-link">Nosotros</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="contact-page">
+        <!-- Hero de Contacto Mejorado -->
+        <section class="service-hero contact-hero">
+            <div class="container">
+                <div class="service-hero-content">
+                    <div class="service-hero-logo">
+                        <img src="img/PNG/ISOTIPO WEBLY RECORTADA.png" alt="Weblycr Logotipo">
+                    </div>
+                    <h1 class="fade-in-up">Contáctanos</h1>
+                    <p class="fade-in-up delay-1">Hablemos sobre cómo podemos impulsar tu proyecto digital y crear
+                        soluciones que transformen tu negocio.</p>
+
+                    <div class="hero-features fade-in-up delay-2">
+                        <span><i class="fas fa-clock"></i> Respuesta en 24h</span>
+                        <span><i class="fas fa-check-circle"></i> Presupuesto sin compromiso</span>
+                        <span><i class="fas fa-headset"></i> Soporte personalizado</span>
+                    </div>
+
+                    <div class="hero-buttons fade-in-up delay-3">
+                        <a href="#form-section" class="btn btn-primary">Solicitar Cotización</a>
+                        <a href="tel:+50686165920" class="btn btn-secondary">
+                            <i class="fas fa-phone"></i> Llamar Ahora
+                        </a>
+                    </div>
+                </div>
+                <div class="service-hero-image">
+                    <div class="contact-hero-visual">
+                        <i class="fas fa-comments"
+                            style="font-size: 6rem; color: var(--white); margin-bottom: 1rem;"></i>
+                        <div class="floating-elements">
+                            <div class="floating-element" style="animation-delay: 0s;">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="floating-element" style="animation-delay: 0.5s;">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="floating-element" style="animation-delay: 1s;">
+                                <i class="fas fa-video"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Métodos de Contacto -->
+        <section class="contact-methods">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="fade-in-up">Múltiples Formas de Contacto</h2>
+                    <p class="fade-in-up delay-1">Elige la opción que mejor se adapte a tus necesidades</p>
+                </div>
+
+                <div class="contact-methods-grid">
+                    <div class="contact-method-card scale-in">
+                        <div class="method-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h3>Llamada Telefónica</h3>
+                        <p>Habla directamente con nuestro equipo</p>
+                        <a href="tel:+50686165920" class="btn btn-outline">
+                            <i class="fas fa-phone"></i> +506 8616-5920
+                        </a>
+                        <div class="method-info">
+                            <p><i class="fas fa-clock"></i> Lunes a Viernes: 8am - 6pm</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method-card scale-in delay-1">
+                        <div class="method-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <h3>WhatsApp Business</h3>
+                        <p>Comunicación rápida y directa</p>
+                        <a href="https://wa.me/50686165920" target="_blank" class="btn btn-outline whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Enviar Mensaje
+                        </a>
+                        <div class="method-info">
+                            <p><i class="fas fa-clock"></i> Respuesta en minutos</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-method-card scale-in delay-2">
+                        <div class="method-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3>Correo Electrónico</h3>
+                        <p>Para consultas detalladas y documentación</p>
+                        <a href="mailto:info@weblycr.com" class="btn btn-outline">
+                            <i class="fas fa-envelope"></i> info@weblycr.com
+                        </a>
+                        <div class="method-info">
+                            <p><i class="fas fa-clock"></i> Respuesta en 24 horas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección Principal de Contacto -->
+        <section class="contact-details" id="form-section">
+            <div class="container">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-logo">
+                            <img src="img/PNG/ISOTIPO WEBLY RECORTADA.png" alt="Weblycr Logo">
+                        </div>
+                        <h2 class="fade-in-up">Trabajemos juntos</h2>
+                        <p class="fade-in-up delay-1">Estamos listos para escuchar tus ideas y transformarlas en
+                            soluciones digitales que marquen la diferencia en tu negocio.</p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-item fade-in-up">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h4>Ubicación</h4>
+                                    <p>Santa Cruz, Guanacaste, Costa Rica</p>
+                                    <small class="contact-note"><i class="fas fa-globe-americas"></i> Servicios
+                                        disponibles a nivel nacional e internacional</small>
+                                </div>
+                            </div>
+                            <div class="contact-item fade-in-up delay-1">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <p>+506 8616-5920</p>
+                                    <small class="contact-note"><i class="fas fa-headset"></i> Soporte en español e
+                                        inglés</small>
+                                </div>
+                            </div>
+                            <div class="contact-item fade-in-up delay-2">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@weblycr.com</p>
+                                    <small class="contact-note"><i class="fas fa-paper-plane"></i> También:
+                                        soporte@weblycr.com</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Redes Sociales Mejoradas -->
+                        <div class="social-links fade-in-up delay-4">
+                            <h4>Síguenos y Conecta</h4>
+                            <p class="social-description">Mantente actualizado con nuestros proyectos y consejos
+                                digitales</p>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/share/1AvwB9TNkr/?mibextid=wwXIfr"
+                                    class="social-icon facebook" target="_blank">
+                                    <i class="fab fa-facebook-f"></i>
+                                    <span class="social-tooltip">Facebook</span>
+                                </a>
+                                <a href="https://x.com/weblycr?s=21" class="social-icon twitter" target="_blank">
+                                    <i class="fab fa-twitter"></i>
+                                    <span class="social-tooltip">Twitter</span>
+                                </a>
+                                <a href="https://www.instagram.com/weblycr?igsh=MTczOHY1OWlocnAxeQ%3D%3D&utm_source=qr"
+                                    class="social-icon instagram" target="_blank">
+                                    <i class="fab fa-instagram"></i>
+                                    <span class="social-tooltip">Instagram</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/webly-cr-026590398?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                                    class="social-icon linkedin" target="_blank">
+                                    <i class="fab fa-linkedin-in"></i>
+                                    <span class="social-tooltip">LinkedIn</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulario Mejorado -->
+                    <div class="contact-form">
+                        <div class="form-header">
+                            <h3 class="fade-in-up">Envíanos un mensaje</h3>
+                            <p class="fade-in-up delay-1">Completa el formulario y nos pondremos en contacto contigo</p>
+                        </div>
+
+                        <form id="contactForm" class="fade-in-up delay-2">
+                            <div class="form-progress">
+                                <div class="progress-step active">1</div>
+                                <div class="progress-step">2</div>
+                                <div class="progress-step">3</div>
+                            </div>
+
+                            <div class="form-step active" id="step1">
+                                <div class="form-group">
+                                    <label for="name">
+                                        <i class="fas fa-user"></i> Nombre completo *
+                                    </label>
+                                    <input type="text" id="name" name="name" required placeholder="Tu nombre completo">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        <i class="fas fa-envelope"></i> Email *
+                                    </label>
+                                    <input type="email" id="email" name="email" required
+                                        placeholder="ejemplo@email.com">
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">
+                                        <i class="fas fa-phone"></i> Teléfono
+                                    </label>
+                                    <input type="tel" id="phone" name="phone" placeholder="+506 8616-5920">
+                                </div>
+                                <button type="button" class="btn btn-primary next-step" data-next="step2">
+                                    Siguiente <i class="fas fa-arrow-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="form-step" id="step2">
+                                <div class="form-group">
+                                    <label for="service">
+                                        <i class="fas fa-cogs"></i> Servicio de interés *
+                                    </label>
+                                    <select id="service" name="service" required>
+                                        <option value="">Selecciona un servicio</option>
+                                        <option value="landing">Landing Page</option>
+                                        <option value="webapp">Aplicación Web</option>
+                                        <option value="mobile">Aplicación Móvil</option>
+                                        <option value="multiple">Múltiples servicios</option>
+                                        <option value="consulting">Consultoría</option>
+                                        <option value="other">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline prev-step" data-prev="step1">
+                                        <i class="fas fa-arrow-left"></i> Anterior
+                                    </button>
+                                    <button type="button" class="btn btn-primary next-step" data-next="step3">
+                                        Siguiente <i class="fas fa-arrow-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="form-step" id="step3">
+                                <div class="form-group">
+                                    <label for="company">
+                                        <i class="fas fa-building"></i> Empresa / Proyecto
+                                    </label>
+                                    <input type="text" id="company" name="company"
+                                        placeholder="Nombre de tu empresa o proyecto">
+                                </div>
+                                <div class="form-group">
+                                    <label for="message">
+                                        <i class="fas fa-comment-alt"></i> Mensaje *
+                                    </label>
+                                    <textarea id="message" name="message" rows="5" required
+                                        placeholder="Cuéntanos sobre tu proyecto, objetivos, y cualquier información relevante..."></textarea>
+                                    <small class="char-count">Caracteres: <span id="charCount">0</span>/500</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="how">
+                                        <i class="fas fa-lightbulb"></i> ¿Cómo nos encontraste?
+                                    </label>
+                                    <select id="how" name="how">
+                                        <option value="">Selecciona una opción</option>
+                                        <option value="search">Búsqueda en Google</option>
+                                        <option value="social">Redes Sociales</option>
+                                        <option value="recommendation">Recomendación</option>
+                                        <option value="portfolio">Vimos tu portafolio</option>
+                                        <option value="other">Otro</option>
+                                    </select>
+                                </div>
+                                <div class="form-buttons">
+                                    <button type="button" class="btn btn-outline prev-step" data-prev="step2">
+                                        <i class="fas fa-arrow-left"></i> Anterior
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+
+                        <!-- Estado del formulario -->
+                        <div class="form-status" id="formStatus">
+                            <div class="status-success" style="display: none;">
+                                <i class="fas fa-check-circle"></i>
+                                <h4>¡Mensaje enviado!</h4>
+                                <p>Te contactaremos en las próximas 24 horas.</p>
+                            </div>
+                            <div class="status-error" style="display: none;">
+                                <i class="fas fa-exclamation-circle"></i>
+                                <h4>Error al enviar</h4>
+                                <p>Por favor, intenta nuevamente o contáctanos directamente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de FAQ -->
+        <section class="contact-faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="fade-in-up">Preguntas Frecuentes</h2>
+                    <p class="fade-in-up delay-1">Resolvemos tus dudas más comunes</p>
+                </div>
+
+                <div class="faq-grid">
+                    <div class="faq-item fade-in-up">
+                        <div class="faq-question">
+                            <h4><i class="fas fa-question-circle"></i> ¿Cuál es el tiempo de respuesta?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Respondemos todas las consultas en un máximo de 24 horas hábiles. Para urgencias,
+                                recomendamos contactarnos por WhatsApp.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up delay-1">
+                        <div class="faq-question">
+                            <h4><i class="fas fa-question-circle"></i> ¿Ofrecen presupuesto sin compromiso?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Sí, realizamos un análisis detallado de tu proyecto y te presentamos una propuesta
+                                personalizada sin ningún compromiso.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up delay-2">
+                        <div class="faq-question">
+                            <h4><i class="fas fa-question-circle"></i> ¿Trabajan con empresas fuera de Costa Rica?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>¡Absolutamente! Trabajamos con clientes internacionales. Ofrecemos soporte en español e
+                                inglés y manejamos diferentes zonas horarias.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item fade-in-up delay-3">
+                        <div class="faq-question">
+                            <h4><i class="fas fa-question-circle"></i> ¿Cuál es el proceso después del contacto?</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>1. Evaluación inicial<br>2. Propuesta detallada<br>3. Planificación del proyecto<br>4.
+                                Desarrollo y revisiones<br>5. Entrega y soporte</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <!-- Columna 1: Navegación -->
+                <div class="footer-column">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Inicio</a></li>
+                        <li><a href="about.html" class="footer-link">Nosotros</a></li>
+                        <li><a href="services.html" class="footer-link">Servicios</a></li>
+                        <li><a href="contact.html" class="footer-link active">Contacto</a></li>
+                        <li><a href="privacy.html" class="footer-link">Privacidad</a></li>
+                        <li><a href="terms.html" class="footer-link">Términos</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 2: Servicios -->
+                <div class="footer-column">
+                    <h4>Servicios</h4>
+                    <ul class="footer-services">
+                        <li><a href="services/landing.html" class="footer-link">Landing Pages</a></li>
+                        <li><a href="services/webapp.html" class="footer-link">Aplicaciones Web</a></li>
+                        <li><a href="services/mobile.html" class="footer-link">Apps Móviles</a></li>
+                        <li><a href="contact.html" class="footer-link">Consultoría</a></li>
+                        <li><a href="contact.html" class="footer-link">Presupuesto</a></li>
+                        <li><a href="contact.html" class="footer-link">Soporte</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Contacto rápido -->
+                <div class="footer-column">
+                    <h4>Contacto Rápido</h4>
+                    <div class="quick-contact">
+                        <a href="tel:+50686165920" class="contact-btn">
+                            <i class="fas fa-phone"></i> Llamar Ahora
+                        </a>
+                        <a href="https://wa.me/50686165920" target="_blank" class="contact-btn whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> WhatsApp
+                        </a>
+                        <a href="mailto:soporte@weblycr.com" class="contact-btn email-btn">
+                            <i class="fas fa-envelope"></i> Email
+                        </a>
+                    </div>
+
+                    <!-- Info de contacto mínima -->
+                    <div class="mini-contact-info">
+                        <p><i class="fas fa-phone"></i> +506 8616-5920</p>
+                        <p><i class="fas fa-envelope"></i> soporte@weblycr.com</p>
+                    </div>
+                </div>
+
+                <!-- Columna 4: Logo y Redes Sociales -->
+                <div class="footer-column">
+                    <div class="footer-logo-social">
+                        <!-- Logo -->
+                        <div class="footer-logo-img">
+                            <img src="img/PNG/IMAGOTIPO AZUL V2.png" alt="Weblycr">
+                        </div>
+
+                        <!-- Redes Sociales -->
+                        <div class="social-section">
+                            <div class="social-icons">
+                                <a href="https://facebook.com/weblycr" target="_blank" class="social-icon"
+                                    aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://instagram.com/weblycr" target="_blank" class="social-icon"
+                                    aria-label="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="https://linkedin.com/company/weblycr" target="_blank" class="social-icon"
+                                    aria-label="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-content">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Weblycr. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="footer-payment">
+                        <div class="payment-icons">
+                            <i class="fab fa-cc-visa" title="Visa"></i>
+                            <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                            <i class="fas fa-university" title="Transferencia"></i>
+                        </div>
+                    </div>
+                    <div class="footer-legal-links">
+                        <a href="contact.html" class="footer-link active">Contacto</a>
+                        <span class="separator">|</span>
+                        <a href="privacy.html" class="footer-link">Privacidad</a>
+                        <span class="separator">|</span>
+                        <a href="terms.html" class="footer-link">Términos</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // JavaScript para mejoras en la página de contacto
+        document.addEventListener('DOMContentLoaded', function () {
+            // Contador de caracteres para el textarea
+            const messageTextarea = document.getElementById('message');
+            const charCount = document.getElementById('charCount');
+
+            if (messageTextarea && charCount) {
+                messageTextarea.addEventListener('input', function () {
+                    charCount.textContent = this.value.length;
+                    if (this.value.length > 500) {
+                        charCount.style.color = '#ff4757';
+                    } else {
+                        charCount.style.color = 'var(--color-700)';
+                    }
+                });
+            }
+
+            // Sistema de pasos del formulario
+            const nextButtons = document.querySelectorAll('.next-step');
+            const prevButtons = document.querySelectorAll('.prev-step');
+
+            nextButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const currentStep = this.closest('.form-step');
+                    const nextStepId = this.getAttribute('data-next');
+                    const nextStep = document.getElementById(nextStepId);
+
+                    if (validateStep(currentStep)) {
+                        currentStep.classList.remove('active');
+                        nextStep.classList.add('active');
+                        updateProgress(nextStepId);
+                    }
+                });
+            });
+
+            prevButtons.forEach(button => {
+                button.addEventListener('click', function () {
+                    const currentStep = this.closest('.form-step');
+                    const prevStepId = this.getAttribute('data-prev');
+                    const prevStep = document.getElementById(prevStepId);
+
+                    currentStep.classList.remove('active');
+                    prevStep.classList.add('active');
+                    updateProgress(prevStepId);
+                });
+            });
+
+            function validateStep(step) {
+                const inputs = step.querySelectorAll('input[required], select[required]');
+                let isValid = true;
+
+                inputs.forEach(input => {
+                    if (!input.value.trim()) {
+                        input.style.borderColor = '#ff4757';
+                        isValid = false;
+                    } else {
+                        input.style.borderColor = '';
+                    }
+                });
+
+                return isValid;
+            }
+
+            function updateProgress(stepId) {
+                const steps = document.querySelectorAll('.progress-step');
+                steps.forEach(step => step.classList.remove('active'));
+
+                switch (stepId) {
+                    case 'step1':
+                        steps[0].classList.add('active');
+                        break;
+                    case 'step2':
+                        steps[1].classList.add('active');
+                        break;
+                    case 'step3':
+                        steps[2].classList.add('active');
+                        break;
+                }
+            }
+
+            // FAQ Accordion
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function () {
+                    const item = this.closest('.faq-item');
+                    item.classList.toggle('active');
+
+                    const icon = this.querySelector('.fa-chevron-down');
+                    icon.classList.toggle('rotate');
+                });
+            });
+
+           
+
+            function resetFormProgress() {
+                const steps = document.querySelectorAll('.form-step');
+                steps.forEach(step => step.classList.remove('active'));
+                steps[0].classList.add('active');
+
+                const progressSteps = document.querySelectorAll('.progress-step');
+                progressSteps.forEach(step => step.classList.remove('active'));
+                progressSteps[0].classList.add('active');
+
+                if (charCount) charCount.textContent = '0';
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>
